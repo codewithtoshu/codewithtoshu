@@ -1,485 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Glide js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
-    <!-- Custom StyleSheet -->
-    <link rel="stylesheet" href="../style/style.css" />
-    <title>ecommerce Website</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header" id="header">
-      <!-- Top Nav -->
-      <div class="top-nav">
-        <div class="container d-flex">
-          <p>Order Online Or Call Us: +91 96325 78412</p>
-          <ul class="d-flex">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hotel & Restaurant</title>
+    <!-- FONT AWSOME--ICON LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- BOOTSTRAP LINK -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!-- BOOTSTRAP ICON LINK -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- BOOTSTAP SCRIPT -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- JQUERY SCRIPT -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+
+    <!-- CSS FILE LINK -->
+    <link rel="stylesheet" href="/style/index.css">
+
+    <!-- JAVASCRIPT LINK -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <section id="navigation" class="container-fluid p-2">
+        <nav class="navbar navbar-expand-lg fixed-top bgcolor" data-bs-theme="dark">
+            <div class="container-fluid" style="color: #9b804e;">
+                <div>
+                    <h3 class="fs-5 fw-bold">Hotel And Restaurant</h3>
+
+                </div>
+                <button class="navbar-toggler" style="border: 1px solid #9b804e;" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fs-5 fw-bold" style="color: #9b804e;" id="offcanvasNavbarLabel">hotel
+                            & Restaurant</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="head-nav">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="item active-1 ">Home</span>
+                                </a>
+                            </li>
+                            <!-- 02 -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="item ">About</span>
+                                </a>
+                            </li>
+
+                            <!-- 03 -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="item ">Room's</span>
+                                </a>
+                            </li>
+
+                            <!-- 04 -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="item ">Dinig</span>
+                                </a>
+                            </li>
+
+
+                            <!-- 05 -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="item ">Gallery</span>
+                                </a>
+                            </li>
+
+                            <!-- 06 -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="item ">Contect</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="head-btn">
+                            <a href="#" class="text-white">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- NAVIGATION BAR FINSH -->
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <!-- first carousel -->
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/images/room1.jpg " class="d-block w-100 img-fluid" style="height: 100vh;" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h1>SUITES & APARTMENT</h1>
+                        <h5>The best escape you can have is getting a hotel room and doing what you love</h5>
+                        <a href="hotel.html"><button class="btn btn-danger mt-2">Our Hotel </button></a>
+                        <a href="restaurant.html"><button class="btn btn-danger mt-2">Restaurant </button></a>
+                    </div>
+
+                </div>
+
+                <!-- Second Carousel -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../images/resaurant/rest20.jpg" class="d-block img-fluid w-100" style="height: 100vh;"
+                        alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h1>FOODIES WELCOME HERE</h1>
+                        <h5>Choose healthy. Be strong. Live long.</h5>
+                        <a href="hotel.html"><button class="btn btn-danger mt-2">Our Hotel </button></a>
+                        <a href="restaurant.html"><button class="btn btn-danger mt-2">Restaurant </button></a>
+                    </div>
+                </div>
+
+                <!-- third carousel -->
+                <div class="carousel-item">
+                    <img src="/images/marraige_hall1.jpg" class="d-block img-fluid w-100" style="height: 100vh;"
+                        alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h1>ENJOY A LUXURY EXPERIENCE</h1>
+                        <h5>Celebrate Life’s Milestones in Elegance and Style</h5>
+                        <a href="hotel.html"><button class="btn btn-danger mt-2">Our Hotel </button></a>
+                        <a href="restaurant.html"><button class="btn btn-danger mt-2">Restaurant </button></a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class=" carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-      </div>
-      <div class="navigation">
-        <div class="nav-center container d-flex">
-        <a href="/" class="logo"><h1>Navrang</h1></a>
+    </section>
+    <!-- HERO SECTION FINISH -->
 
-          <ul class="nav-list d-flex">
-            <li class="nav-item">
-              <a href="index2.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="product.html" class="nav-link">Shop</a>
-            </li>
-            <li class="nav-item">
-            <a href="#terms" class="nav-link">Terms</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="icons d-flex">
-            <a href="login.html" class="icon">
-              <i class="bx bx-user"></i>
-            </a>
-            <div class="icon">
-              <i class="bx bx-search"></i>
-            </div>
-            <div class="icon">
-              <i class="bx bx-heart"></i>
-              <span class="d-flex">0</span>
-            </div>
-            <a href="card-1.html" class="icon">
-              <i class="bx bx-cart"></i>
-              <span class="d-flex">0</span>
-            </a>
-          </li>
-          </ul>
+    <!-- About Section -->
+    <section id="about-home" class="container-fluid mt-1">
+        <div class="row">
+            <div id="box-1" class="col-lg-6 col-md-12 col-sm-12 col-12 .img-about-home">
+                <img src="/images/hero01.jpg" class="img-fluid">
 
-          <div class="icons d-flex">
-            <a href="login.html" class="icon">
-              <i class="bx bx-user"></i>
-            </a>
-            <div class="icon">
-              <i class="bx bx-search"></i>
             </div>
-            <div class="icon">
-              <i class="bx bx-heart"></i>
-              <span class="d-flex">0</span>
-            </div>
-            <a href="card-1.html" class="icon">
-              <i class="bx bx-cart"></i>
-              <span class="d-flex">0</span>
-            </a>
-          </div>
 
-          <div class="hamburger">
-            <i class="bx bx-menu-alt-left"></i>
-          </div>
+            <div id="box-2" class="col-lg-6 col-md-12 col-sm-12 col-12 .content-about-home mt-2">
+                <h6>About Us</h6>
+                <h1>The Hotel </h1>
+                <p>The essence of Radisson Blu is reflected in every aspect of who we are and what we do. We provide
+                    unparalleled service, comfort, and style while creating meaningful and memorable experiences.
+
+                    By paying close attention to the small details that make a big difference, we inspire unforgettable
+                    experiences with every stay.</p>
+                <button class="btn-book-detail-1 w-25">Explore More</button>
+            </div>
         </div>
-      </div>
+        <!--  <div id="box-1-innr">
+    <img src="/images/luggage.png" alt="">
+  </div> -->
 
-    <div class="hero">
-      <div class="glide" id="glide_1">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="center">
-                <div class="left">
-                  <span class="">New Inspiration 2020</span>
-                  <h1 class="">NEW COLLECTION!</h1>
-                  <p>Trending from men's and women's  style collection</p>
-                  <a href="#" class="hero-btn">SHOP NOW</a>
-                </div>
-                <div class="right">
-                    <img class="img1" src="../imgs1/hero-1.png" alt="">
-                </div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="center">
-                <div class="left">
-                  <span>New Inspiration 2020</span>
-                  <h1>THE PERFECT MATCH!</h1>
-                  <p>Trending from men's and women's  style collection</p>
-                  <a href="#" class="hero-btn">SHOP NOW</a>
-                </div>
-                <div class="right">
-                  <img class="img2" src="../imgs1/hero-2.png" alt="">
-                </div>
-              </div>
-            </li>
-          </ul>
+    </section>
+    <!-- About section Close -->
+    <!-- hotel -->
+
+    <!-- Hotel SEction 01 -->
+    <section id="hotel-1" class="contianer mt-2">
+        <div class="home-1-heading mt-4 py-5">
+            <h1 class="text-center">The Hotel</h1>
         </div>
-      </div>
+        <div class="hotel-home">
+            <div class="row hotel-home-1">
+
+                <!-- block-1 -->
+                <div class="hotel-home-b1 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 md-w-100 sm-w-100">
+
+                </div>
+
+                <!--  Block-02 -->
+                <div class="hotel-home-b2 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="facility-hotel-location">
+                        <div class="hotel-home-b2-1">
+                            <img src="/images/room11.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-home-b2-2 mt-4">
+                        <img src="/images/room12.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- Block-03 -->
+                <div class="hotel-home-b3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 md-w-100 sm-w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hotel-section-02 -->
+    <section id="our-featured" class="container-fluid mt-2">
+        <div class="row" id="our-featured-main-container">
+
+            <!-- room Details -->
+            <div id="our-featured-b1" class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+
+                <!-- content -->
+                <div id="of-b1-inner-b1">
+                    <h6>Our Features</h6>
+                    <h1>Single Room</h1>
+                    <p>Phasellus semper vehicula eros, non ultricies neque rhoncus sed. Morbi aliquam ex in dui aliquet
+                        consectetur. Fusce pellentesque turpis ut lorem elementum commodo.</p>
+                </div>
+
+                <!-- phoneNumber -->
+                <div id="of-b1-inner-b2">
+                    <div class="of-b1-inner-b2-phnlogo">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="of-b1-inner-b2-phn">
+                        <span> +91 78945-61230</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room img -->
+            <div id="our-featured-b2" class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+                <div class="our-featured-b2-img">
+                    <img src="/images/room12.jpg" alt="">
+                </div>
+            </div>
+            <!-- Room Facility -->
+            <div id="our-featured-b3" class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+                <div id="main-container-our-featured-b3">
+                    <!-- Smart Key -->
+                    <div class="smart-key-0 d-flex mb-4 gap-4 justify-content-center">
+                        <div class="smart-key-0-img">
+                            <img src="/images/key-0.png" alt="">
+                        </div>
+                        <div class="smart-key-0-content">
+                            <h5>Smart Key</h5>
+                            <p>Phasellus semper vehicula eros, non ultricies neque rhoncus sed</p>
+                        </div>
+                    </div>
+
+                    <!-- Breakfast -->
+                    <div class="smart-key-0 d-flex gap-4 mb-4 justify-content-center">
+                        <div class="smart-key-0-img">
+                            <img src="/images/breakfast-0.png" alt="">
+                        </div>
+                        <div class="smart-key-0-content">
+                            <h5>Breakfast</h5>
+                            <p>Phasellus semper vehicula eros, non ultricies neque rhoncus sed</p>
+                        </div>
+                    </div>
+                    <!-- Wifi -->
+                    <div class="smart-key-0 d-flex gap-4 mb-4 justify-content-center">
+                        <div class="smart-key-0-img">
+                            <img src="/images/wifi-0.png" alt="">
+                        </div>
+                        <div class="smart-key-0-content">
+                            <h5>Home Wifi</h5>
+                            <p>Phasellus semper vehicula eros, non ultricies neque rhoncus sed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="learn-more-btn">
+            <a href="hotel.html" class="home-hotel-visitbtn">VISIT MORE</a>
+        </div>
+    </section>
+
+    <!-- hotel end -->
+
+
+
+    <!-- Resurent Section 01 -->
+    <div class="home-1-heading mt-2 py-5">
+        <h1 class="text-center">The Restaurant</h1>
     </div>
-    </header>
-
-    <!-- Categories Section -->
-    <section class="section category">
-      <div class="cat-center">
-        <div class="cat">
-          <img src="../imgs1/cat3.jpg" alt="" />
-          <div>
-            <p>WOMEN'S WEAR</p>
-          </div>
-        </div>
-        <div class="cat">
-          <img src="../imgs1/cat2.jpg" alt="" />
-          <div>
-            <p>ACCESSORIES</p>
-          </div>
-        </div>
-        <div class="cat">
-          <img src="../imgs1/cat1.jpg" alt="" />
-          <div>
-            <p>MEN'S WEAR</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- New Arrivals -->
-    <section class="section new-arrival">
-      <div class="title">
-        <h1>NEW <span style="color: #3c0008;">ARRIVALS</span></h1>
-        <p>All the latest picked from designer of our store</p>
-      </div>
-
-      <div class="product-center">
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-1.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productdetail.html">Quis Nostrud Exercitation</a>
-            <h4>$700</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-2.jpg" alt="" />
-            </a>
-            <span class="discount">50%</span>
-          </div>
-
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="">Sonata White Men’s Shirt</a>
-            <h4>$800</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-3.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productdetail.html">Concepts Solid Pink Men’s Polo</a>
-            <h4>$150</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-4.jpg" alt="" />
-            </a>
-            <span class="discount">50%</span>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productdetail.html">Edor do eiusmod tempor</a>
-            <h4>$900</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-5.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productdetail.html">Edor do eiusmod tempor</a>
-            <h4>$100</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-6.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productdetail.html">Edor do eiusmod tempor</a>
-            <h4>$500</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-7.jpg" alt="" />
-            </a>
-            <span class="discount">50%</span>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productdetail.html">Edor do eiusmod tempor</a>
-            <h4>$200</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-8.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productdetail.html">Edor do eiusmod tempor</a>
-            <h4>$560</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Promo -->
-
-    <section class="section banner">
-<div class="left">
-  <span class="trend">Trend Design</span>
-  <h1>New Collection 2021</h1>
-  <p>New Arrival <span class="color">Sale 50% OFF</span> Limited Time Offer</p>
-  <a href="#" class="btn btn-1">Discover Now</a>
-</div>
-<div class="right">
-  <img src="../imgs1/banner.png" alt="">
-</div>
-    </section>
-
-
-
-
-    <!-- Featured -->
-  
-    <section class="section new-arrival">
-      <div class="title">
-        <h1>Featured</h1>
-        <p>All the latest picked from designer of our store</p>
-      </div>
-
-      <div class="product-center">
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productdetail.html" class="product-thumb">
-              <img src="../imgs1/product-7.jpg" alt="" />
-            </a>
-            <span class="discount">50%</span>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="">Quis Nostrud Exercitation</a>
-            <h4>$700</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="../imgs1/product-4.jpg" alt="" />
-            </a>
-          </div>
-
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="">Sonata White Men’s Shirt</a>
-            <h4>$800</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="../imgs1/product-5.jpg" alt="" />
-            </a>
-            <span class="discount">40%</span>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="">Concepts Solid Pink Men’s Polo</a>
-            <h4>$150</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="../imgs1/product-1.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="">Edor do eiusmod tempor</a>
-            <h4>$900</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact">
-      <div class="row">
-        <div class="col">
-          <h2>EXCELLENT SUPPORT</h2>
-          <p>We love our customers and they can reach us any time
-          of day we will be at your service 24/7</p>
-          <a href="" class="btn btn-1">Contact</a>
-        </div>
-        <div class="col">
-          <form action="">
-            <div>
-              <input type="email" placeholder="Email Address">
-            <a href="">Send</a>
+    <section id="chef-section" class="container-fluid mt-2 bg-dark">
+        <div class="chef-main">
+            <div class="chef-img">
+                <img src="/images/resaurant/chef.jpg" alt="">
             </div>
-          </form>
-        </div>
-      </div>
-    </section>
+            <div class="chef-details">
+                <div class="cd-block-1">
+                    <h6>20 YEAR OF EXPERIENCE</h6>
+                    <h2>Big Chef's Menu</h2>
+                    <p>
+                        20 YEAR OF EXPERIENCE
+                        Big Chef's Menu
+                        Restaurant vulputate massa ons amet ravida haretra nuam the drana miss uctus enec accumsan eu
+                        justo aliquam sit amet auctor orci done vitae vehicula risus duise nunc sapien, accumsan id
+                        mauris rutrum asiquam congue nie ipsum auctor frinilla finibus sapien.</p>
+                </div>
+                <div class="cd-block-2">
+                    <div class="cd-block-2-img">
+                        <img src="/images/resaurant/signature.svg" alt="">
+                    </div>
+                    <div class="cd-block-2-chefname">
+                        <h6>Harold Brown</h6>
+                        <h6 class="master-chef">MASTER CHEF</h6>
+                    </div>
+                </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="row">
-        <div class="col d-flex">
-          <h4>INFORMATION</h4>
-          <a href="">About us</a>
-          <a href="">Contact Us</a>
-          <a href="">Term & Conditions</a>
-          <a href="">Shipping Guide</a>
+            </div>
         </div>
-        <div class="col d-flex">
-          <h4>USEFUL LINK</h4>
-          <a href="">Online Store</a>
-          <a href="">Customer Services</a>
-          <a href="">Promotion</a>
-          <a href="">Top Brands</a>
+    </section>
+    <!-- Resurent Section 01 end -->
+
+
+
+    <!-- Resurent Section 02 -->
+    <section id="chef-recomn-menu" class="container-fluid mt-4 mb-4">
+        <div class="main-container">
+            <div class="chef-recom-b1">
+                <div class="chef-recom-content">
+                    <div class="chef-recm-img">
+                        <img src="/images/menu copy.png" alt="">
+                    </div>
+                    <div class="chef-recm-contnt">
+                        <h6>CURRENT MENU</h6>
+                        <h1>Daily New Fresh Menus</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="chef-recom-b2">
+                <div class="chef-recom-content">
+                    <div class="chef-recm-img">
+                        <img src="/images/serving_hot_tasty copy.png" alt="">
+                    </div>
+                    <div class="chef-recm-contnt">
+                        <h6>ADDRESS OF TASTE</h6>
+                        <h1>Fresh Ingredient Meals</h1>
+                    </div>
+                </div>
+                <div class="on-hover-show">
+
+                </div>
+            </div>
+            <div class="chef-recom-b3">
+                <div class="chef-recom-content">
+                    <div class="chef-recm-img">
+                        <img src="/images/chef_hat copy.png" alt="">
+                    </div>
+                    <div class="chef-recm-contnt">
+                        <h6>EXECUTIVE CHEFS</h6>
+                        <h1>Senior & Talented Chefs</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col d-flex">
-          <span><i class='bx bxl-facebook-square'></i></span>
-          <span><i class='bx bxl-instagram-alt' ></i></span>
-          <span><i class='bx bxl-github' ></i></span>
-          <span><i class='bx bxl-twitter' ></i></span>
-          <span><i class='bx bxl-pinterest' ></i></span>
+        <div class="learn-more-btn mt-4">
+            <a href="restaurant.html" class="home-hotel-visitbtn">VISIT MORE</a>
         </div>
-      </div>
+    </section>
+    <!-- Resurent Section 02 end -->
+
+
+    <!-- Facility Start -->
+    <div class="home-1-heading mt-2 py-5">
+        <h1 class="text-center">Our Facility</h1>
+    </div>
+
+    <section id="facility-home" class="container-fluid py-5">
+        <div class="main-container-facility-home">
+
+            <!-- Block 01 -->
+            <div class="facility-home-inner-block-1">
+                <div class="main-content-container">
+                    <img src="/images/room.png" width="50" height="50">
+                    <h2>Room's</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sed quod perspiciatis laboriosam
+                        expedita beatae.</p>
+
+                </div>
+            </div>
+
+
+            <!-- Block 02 -->
+            <div class="facility-home-inner-block-2">
+                <div class="main-content-container">
+                    <img src="/images/wifi.png" width="50" height="50">
+                    <h2>Wifi</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sed quod perspiciatis laboriosam
+                        expedita beatae.</p>
+
+                </div>
+            </div>
+
+
+            <!-- Block 03 -->
+            <div class="facility-home-inner-block-3">
+                <div class="main-content-container">
+                    <img src="/images/Pool.png" width="50" height="50">
+                    <h2>Swiming Pool</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sed quod perspiciatis laboriosam
+                        expedita beatae.</p>
+
+                </div>
+            </div>
+
+
+            <!-- Block 04 -->
+            <div class="facility-home-inner-block-4">
+                <div class="main-content-container">
+                    <img src="/images/burger.png" width="50" height="50">
+                    <h2>Cheeseburger</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sed quod perspiciatis laboriosam
+                        expedita beatae.</p>
+
+                </div>
+            </div>
+
+            <!-- Block 05 -->
+            <div class="facility-home-inner-block-5">
+                <div class="main-content-container">
+                    <img src="/images/pizza_slice.png" width="50" height="50">
+                    <h2>Pizza Slice</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sed quod perspiciatis laboriosam
+                        expedita beatae.</p>
+
+                </div>
+            </div>
+
+            <!-- Block 06 -->
+            <div class="facility-home-inner-block-6">
+                <div class="main-content-container">
+                    <img src="/images/coffee_cup.png" width="50" height="50">
+                    <h2>Coffee-Cup</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sed quod perspiciatis laboriosam
+                        expedita beatae.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Facility End -->
+
+
+    <!-- Contact Start -->
+    <div class="home-1-heading mt-2 py-5">
+        <h1 class="text-center">ADDRESS</h1>
+    </div>
+    <section class="container-fluid mt-3" id="contact-home">
+        <div class="main-container-home flex-wrap d-flex justify-content-center align-items-center gap-4">
+            <div class="contact-home-details">
+
+                <!-- 01 -->
+                <div class="star">
+                    <i class="bi bi-star-fill" style="color: #9b804e;"></i>
+                    <i class="bi bi-star-fill" style="color: #9b804e;"></i>
+                    <i class="bi bi-star-fill" style="color: #9b804e;"></i>
+                    <i class="bi bi-star-fill" style="color: #9b804e;"></i>
+                    <i class="bi bi-star-fill" style="color: #9b804e;"></i>
+                </div>
+
+                <!-- 02 -->
+                <div class="contact-home-txt">
+                    <h5>
+                        Each of our guest rooms feature a private bath, wi-fi, cable television and include full
+                        breakfast.
+                    </h5>
+                </div>
+
+                <!-- 03 -->
+                <div class="contact-home-phonenm">
+                    <i class="bi bi-telephone"></i>
+                    <h5> <span>Reservation</span><br>+91 78888 60000</h5>
+                </div>
+
+                <!-- 04 -->
+                <div class="contact-home-chek">
+                    <span><i class="bi bi-check"></i>Call us, it's toll-free.
+
+                    </span>
+                </div>
+            </div>
+            <div class="contact-home-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36078.49652588751!2d78.19188246233176!3d26.214883218958487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c704feb42b3d%3A0xc4c13807ef97e304!2sPark%20Inn%20by%20Radisson%2C%20Gwalior!5e0!3m2!1sen!2sin!4v1699211833777!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Start -->
+
+
+
+    <!-- Footer Start -->
+    <footer class="mt-4">
+        <div class="footer">
+            <div class="row-2" id="footer-icon">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <p class="text-center">The Hotel And Restaurant Copyright &copy;2023 - All rights reserved || Designed
+                    By: Mohammad Tosif </p>
+            </div>
+        </div>
+
     </footer>
+    <!-- Footer end -->
 
+    <script src="/js/main.js"></script>
+</body>
 
-  <!-- PopUp -->
-  <div class="popup hide-popup">
-    <div class="popup-content">
-      <div class="popup-close">
-        <i class='bx bx-x'></i>
-      </div>
-      <div class="popup-left">
-        <div class="popup-img-container">
-          <img class="popup-img" src="../imgs1/popup.jpg" alt="popup">
-        </div>
-      </div>
-      <div class="popup-right">
-        <div class="right-content">
-          <h1>Get Discount <span>50%</span> Off</h1>
-          <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
-          </p>
-          <form action="#">
-            <input type="email" placeholder="Enter your email..." class="popup-form">
-            <a href="#">Subscribe</a>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-  <script src="../javascript/slider.js"></script>
-  <script src="../javascript/index.js"></script>
 </html>
