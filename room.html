@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel & Restaurant</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- FONT AWSOME--ICON LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- BOOTSTRAP LINK -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <!-- BOOTSTRAP ICON LINK -->
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- BOOTSTAP SCRIPT -->
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+  <!-- JQUERY SCRIPT -->
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+
+  <!-- CSS FILE LINK -->
+  <link rel="stylesheet" href="/style/index.css">
+
+  <!-- JAVASCRIPT LINK -->
+  <script src="/js/main.js"></script>
+</head>
+
+<body id="body" onload="bodyLoad()">
+  <!-- ALL SECTION  -->
+  <section id="hotel">
+
+
+    <!-- Navibar Start -->
+    <section id="navigation" class="container-fluid p-2">
+      <nav class="navbar navbar-1 navbar-expand-lg fixed-top bgcolor" data-bs-theme="dark">
+        <div class="container-fluid" style="color: #9b804e;">
+          <div>
+            <h3 class="fs-5 fw-bold">Hotel And Restaurant</h3>
+
+          </div>
+          <button class="navbar-toggler" style="border: 1px solid #9b804e;" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-5 fw-bold" style="color: #9b804e;" id="offcanvasNavbarLabel">hotel
+                & Restaurant</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="head-nav">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">
+                    <span class="item  ">Home</span>
+                  </a>
+                </li>
+                <!-- 02 -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="item  ">About</span>
+                  </a>
+                </li>
+
+                <!-- 03 -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="item active-1 ">Room's</span>
+                  </a>
+                </li>
+
+                <!-- 04 -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="item ">Dinig</span>
+                  </a>
+                </li>
+
+
+                <!-- 05 -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="item ">Gallery</span>
+                  </a>
+                </li>
+
+                <!-- 06 -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="item ">Contect</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="head-btn">
+                <a href="#" class="text-white">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Navibar End -->
+
+    <!-- Hero Section Start -->
+    <section id="hero" class="room-hero mb-4">
+      <div class="inner-about-hero">
+          <h6>The Hotel & Restaurant</h6>
+          <h1>Room's</h1>
+      </div>
+  </section>
+    <!-- Hero Section End -->
+    <!--  Section-01 -->
+    <!-- book your room details -->
+    <section id="book-details" class="p-4">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <h3 class="text-center">Your rooms</h3>
+          <select class="form-select">
+            <option value="" disabled>Choose Your Room</option>
+            <option value="">2BHK Room</option>
+            <option value="">3BHK Room</option>
+            <option value="">Single Bad Room</option>
+            <option value="">Double Bad Room</option>
+            <option value="">Family Room</option>
+
+
+          </select>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h3 class="text-center">cheek in</h3>
+          <input type="date" class="form-control">
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h3 class="text-center">cheek Out</h3>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h3 class="text-center">Guest</h3>
+          <input type="number" class="form-control" placeholder="How Many Your Are">
+        </div>
+        <div class="col-lg-2 btn-bd col-md-6">
+          <button class="btn-book-detail" id="cheek-btn">Book Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- book your room details finsh -->
+
+
+    <!--  Section-02 -->
+    <!-- headline Offres Section -->
+    <section id="headline-sec">
+      <div id="headline" class="container mb-4">
+        <div class="content-heading">
+          <h5>OUR BEST OFFRES</h5>
+        </div>
+        <div class="content-heading-1">
+          <h1>The Best Room's Offre's</h1>
+        </div>
+      </div>
+    </section>
+    <!-- headline Offres Section Finish -->
+
+
+    <!--  Section-03 -->
+    <!-- Our Special Room's -->
+    <section id="best-room" class="container-fluid">
+
+    </section>
+    <!--     <link rel="stylesheet" href="/data/products.json"> -->
+    <script>
+
+    </script>
+    <!-- Our Special Room's Finish -->
+
+
+    <!--  Section-04 -->
+    <!-- headline Offres Section -->
+    <section id="headline-sec">
+      <div id="headline" class="container mb-4">
+        <div class="content-heading">
+          <h5>OUR BEST OFFRES</h5>
+        </div>
+        <div class="content-heading-1">
+          <h1>The Best Room's Offre's</h1>
+        </div>
+      </div>
+    </section>
+    <!-- headline Offres Section Finish -->
+
+
+    <!--  Section-05 -->
+    <!-- extra cost Section start -->
+    <section id="extra-cost">
+      <div class="banner-img">
+        <div class="banner-bg-wht row">
+          <div class="content col-md-6 col-lg-6 col-sm-12 col-12">
+            <div class="content-child  p-4">
+              <h6> ESTIMATION</h6>
+              <h2>Extra Service Cost</h2>
+              <p class="para-1">Aliquam erat volutpat. Quisque sed nisi hendrerit, consectetur ipsum sed, rhoncus
+                ligula. Donec euismod laoreet tortort, non imperdiet libero aliquam in. Vestibulum varius condimentum
+                volutpat. Nunc in sapien a orci maximus
+              </p>
+              <p class="para-2">
+                Aliquam erat volutpat. Quisque sed nisi hendrerit, consectetur ipsum sed, rhoncus ligula. Donec
+                euismod laoreet tortort, non imperdiet libero aliquam in. Vestibulum varius condimentum volutpat. Nunc
+                in sapien a orci maximus</p>
+            </div>
+            <div>
+              <div class="button-extra" class="">
+                <button class="">Read More</button>
+                <div class="online-reserv">
+                  <!-- Logo  -->
+                  <div class="img-extra-call"><i class=" fas fa-thin fa-phone-volume" style="color: #fbf6e8;"></i>
+                  </div>
+                  <!-- infomation -->
+                  <div class="content-extra-info">
+                    <h3>Online Reservation</h3>
+                    <p>+91 8745 32145</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="from col-md-6 col-lg-6 col-sm-12 col-12">
+            <div class="form-extra form">
+              <form action="" class="content-extra-form container mt-4">
+                <div class="row">
+                  <!-- Row 01 -->
+                  <!-- column 01 number of nights -->
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <h5 for="txtNights">Number Of Nights</h5>
+                    <input type="number" id="txtNights" class="form-control" placeholder="Enter the Number's Of nights"
+                      onchange="extraTotal()">
+                  </div>
+                  <!-- column 02 number of person -->
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <h5 for="txtPerson">Number Of Person</h5>
+                    <input type="number" id="txtPerson" class="form-control" placeholder="Enter the Number's Of Person"
+                      onchange="extraTotal()">
+                  </div>
+
+                  <!-- Row-02 -->
+                  <!-- column-01  type of accommodation -->
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-4">
+                    <h5 for="roomType">Type Of Accommodation</h5>
+                    <select name="" class="form-select" id="roomType" onchange="extraTotal()">
+                      <option value="">Select Option</option>
+                      <option value="Room">Room</option>
+                      <option value="Suit">Suit</option>
+                      <option value="Appartment">Appartment</option>
+                      <option value="DoubleBad">Double Bad</option>
+                    </select>
+                  </div>
+                  <!-- column-2 smoking -->
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-4">
+                    <h5 for="optYes">Smoking</h5>
+                    <label for="optYes" class="form-check-label">YES</label>
+                    <input type="radio" id="optYes" value="Smoke Yes" name="Smoking" class="form-check-input"
+                      onchange="extraTotal()">
+                    <label for="optNo" class="form-check-label">NO!</label>
+                    <input type="radio" id="optNo" value="Smoke No" name="Smoking" class="form-check-input"
+                      onchange="extraTotal()">
+                  </div>
+                  <!-- Row -03 --- Services -->
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-4">
+                    <h5 for="optBreakfast">Services</h5>
+                    <label for="optBreakfast" class="form-check-label">Breakfast</label>
+                    <input type="checkbox" id="optBreakfast" value="Breakfast" name="Service" class="form-check-input"
+                      onchange="extraTotal()">
+                    <label for="optLaundry" class="form-check-label">Laundry</label>
+                    <input type="checkbox" id="optLaundry" value="Laundry" name="Service" class="form-check-input"
+                      onchange="extraTotal()">
+                    <label for="optCleaning" class="form-check-label">Cleaning</label>
+                    <input type="checkbox" id="optCleaning" value="Cleaning" name="Service" class="form-check-input"
+                      onchange="extraTotal()">
+                  </div>
+
+                  <!-- row-03 Image & total amount -->
+                  <!-- column-01 cost-img -->
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-4">
+                    <div class="img-extra-cost-form ">
+                      <img src="/images/suit-extracost.png" width="100" height="100" alt="Extra-cost-form-img">
+                    </div>
+                  </div>
+
+                  <!-- column-02----total price -->
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-4">
+                    <div class="total-extra-cost-form ">
+                      <h1 class="text-center" id="lblTotal"><i class="bi bi-currency-rupee"></i></h1>
+                      <p class="text-center">FINAL PRICE</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- extra cost Section end -->
+
+
+
+    <!--  Section-06 -->
+    <!-- headline Offres Section -->
+    <section id="headline-sec">
+      <div id="headline" class="container mb-4">
+        <div class="content-heading-1 text-center">
+          <h5>OUR BEST OFFRES</h5>
+        </div>
+        <div class="content-heading-1">
+          <h1>The Best Room's Offre's</h1>
+        </div>
+      </div>
+    </section>
+    <!-- headline Offres Section Finish -->
+
+
+    <!--  Section-07 -->
+    <!-- Our Room Offers -->
+    <section id="best-offer" class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 20rem;">
+              <img src="/images/room21.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6>All included</h6>
+                <h5 class="card-title">Single Room With Ocean View</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At!</p>
+                <a href="#" class="btn-card-simple">$ 75,25</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Our Room Offers Finish -->
+
+    <!-- Section-08 -->
+    <!-- headline Offres Section -->
+    <section id="headline-sec">
+      <div id="headline" class="container mb-4">
+        <div class="content-heading text-center">
+          <h5>OUR BEST OFFRES</h5>
+        </div>
+        <div class="content-heading-1">
+          <h1>The Best Room's Offre's</h1>
+        </div>
+      </div>
+    </section>
+    <!-- headline Offres Section Finish -->
+
+
+    <!-- Section-09 -->
+    <!-- Facility Section Start  -->
+    <section id="facility" class="container-fluid">
+      <div class="f-service row">
+        <div class=" s-parent-1 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <div class="f-smartkey">
+            <img src="/images/smart-key.png" class="img-fluid me-3" alt="">
+            <div class="f-smartkey-content mt-2 ms-4 p-3">
+
+              <h4>Smart Key</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" s-parent-2 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <div class="s-roomserv">
+            <img src="/images/room-service.png" alt="" class="img-fluid">
+            <div class="f-roomserv-content mt-2 me-3 p-2">
+
+              <h4>Room Service</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" s-parent-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <div class="s-lstore">
+            <img src="/images/suit-extracost.png" alt="" class="img-fluid">
+            <div class="f-lstore-content  mt-2 p-2">
+
+              <h4>Luggage Store</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" s-parent-4 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <div class="s-dailys">
+            <img src="/images/sanitation.png" alt="" class="img-fluid">
+            <div class="f-dailys-content mt-2 p-2">
+              <h4>Daily Sanitation</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facility-1" class="container mt-4">
+      <div class="add-facility">
+        <div class="row facility-1-main-row">
+
+          <!-- facility Block-01 -->
+          <div class="faclity-timet col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="facility-hotel-location">
+              <div class="facility-hotel-location-content">
+                <h4>HOTEL LOCATION</h4>
+                <p>Main Street 56 New York</p>
+                <p>Ph. +1 274 457 375</p>
+                <p>info@hotel.com</p>
+              </div>
+            </div>
+            <div class="facility-hotel-reception mt-4">
+              <h4>RECEPTION</h4>
+              <h5>MON ...... 11:00 - 03:00 pm</h5>
+              <h5>FRY ...... 11:00 - 03:00 pm</h5>
+              <h5>SAT ...... 11:00 - 03:00 pm</h5>
+              <h5>SUN ...... 11:00 - 03:00 pm</h5>
+            </div>
+          </div>
+
+
+          <!-- facility Block-02 -->
+          <div class="facility-lunch col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 md-w-100 sm-w-100">
+            <div class="facility-lunch-content">
+              <div class="facility-lunch-content-img">
+                <img src="/images/icon-5-1.png" height="30" width="30" alt="">
+              </div>
+              <h2 class="text-center">LUNCH</h2>
+            </div>
+          </div>
+
+
+          <!-- facility Block-03 -->
+          <div class="facility-spa col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 md-w-100 sm-w-100">
+            <div class="facility-spa-content">
+              <div class="facility-lunch-content-img">
+                <img src="/images/icon-6-1.png" height="30" width="30" alt="">
+              </div>
+              <h2 class="text-center">SPA</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Facility Section End  -->
+
+
+
+
+    <!-- Section-10 -->
+    <!-- headline Offres Section -->
+    <section id="headline-sec">
+      <div id="headline" class="container mb-4">
+        <div class="content-heading text-center">
+          <h5>OUR BEST OFFRES</h5>
+        </div>
+        <div class="content-heading-1">
+          <h1>The Best Room's Offre's</h1>
+        </div>
+      </div>
+    </section>
+    <!-- headline Offres Section Finish -->
+
+    <!-- Section-11 -->
+    <!-- Price Card Section Start -->
+    <section id="price-details" class="container mt-4">
+
+      <div class="row" id="price-main-container">
+        <div id="price-content" class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div id="content-block1-price">
+            <h1>Single Room</h1>
+            <h1>&#8377;600/- <span>/night</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iusto natus impedit cum quas ipsum
+              quae.</p>
+            <button>MORE INFO</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div id="content-block2-price">
+            <h1>Small Suite</h1>
+            <h1>&#8377;800/- <span>/night</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iusto natus impedit cum quas ipsum
+              quae.</p>
+            <button>MORE INFO</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div id="content-block3-price">
+            <h1>Apartment</h1>
+            <h1>&#8377;1600/- <span>/night</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iusto natus impedit cum quas ipsum
+              quae.</p>
+            <button>MORE INFO</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Price Card Section End -->
+    <!-- Footer Start -->
+    <footer class="mt-4">
+      <div class="footer">
+          <div class="row-2" id="footer-icon">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+          </div>
+
+          <div class="row">
+              <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Career</a></li>
+              </ul>
+          </div>
+
+          <div class="row">
+              <p class="text-center">The Hotel And Restaurant Copyright &copy;2023 - All rights reserved || Designed
+                  By: Mohammad Tosif </p>
+          </div>
+      </div>
+
+  </footer>
+  <!-- Footer end -->
+
+  </section>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: Infinity,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+
+        },
+        786: {
+          slidesPerView: 2,
+
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+    });
+
+
+
+
+    function bodyLoad() {
+      fetch('/data/products.json')
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          createProductCards(data);
+        })
+    }
+
+    function createProductCards(products) {
+      var cardsSection = document.getElementById("best-room");
+
+      products.forEach(function (product) {
+        var cardDiv = document.createElement('div');
+        cardDiv.className = 'hotel-card';
+        cardDiv.innerHTML = `
+ <div id="room" class="room-1">
+     <div class="card-room">
+         <img src=${product.Photo} class="card-img-room" alt="">
+         <div class="card-body-room">
+             <h2 class="card-title-room">${product.Name}</h2>
+             <h3 class="card-footer-room"><i class="bi bi-person-circle" style="font-size: 1.3rem;"></i> <span class="room-guest">${product.Guest}</span> <img src=${product.Image} style="filter: invert(100);" height="20" width="20" alt=""> <span class="room-area">${product.Area}</span></h3>
+         </div>
+     </div>
+     </div>
+         `;
+
+        cardsSection.appendChild(cardDiv);
+      });
+    }
+  </script>
+  <Script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></Script>
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+</body>
+
+</html>
